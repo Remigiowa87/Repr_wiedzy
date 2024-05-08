@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title %} Graph {% endblock %} {% block
+content %}
+
+<div class="container">
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-6 h1">Knowledge Graph Search API</div>
+    </div>
+    <form id="index_form" action="{{url_for('index')}}" method="POST">
+      <div class="row justify-content-start">
+        <div class="col-1 col-form-label">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-3">
+          <input
+            type="text"
+            id="country"
+            name="country"
+            value=""
+            class="form-control"
+          />
+          <br />
+        </div>
+      </div>
+      <div class="row justify-content-start">
+        <div class="col-1 col-form-label"></div>
+        <div class="col-3">
+          <input type="submit" value="Serch" class="btn btn-primary col-12" />
+          <br />
+        </div>
+      </div>
+    </form>
+  </div>
+
+  {% endblock %}
+</div>

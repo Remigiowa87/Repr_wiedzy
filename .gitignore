@@ -1,0 +1,5 @@
+.api_key
+.GeoNames_Username
+venv
+__pycache__/  
+html.xlsx

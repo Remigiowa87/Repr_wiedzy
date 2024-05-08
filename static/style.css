@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  /* background-color: #b6b8b2; */
+  background-color: #ffffff;
+}
+
+.navbar-brand {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand:hover {
+  color: #0d6efd;
+}
