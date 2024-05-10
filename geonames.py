@@ -11,11 +11,25 @@ def get_country_code(country):
 
 
 def get_neighboring_countries(country_code):
-    username = open('.GeoNames_Username').read()
+    username = open('.Geonames_Username').read()
     api_url = f'http://api.geonames.org/neighboursJSON?country={country_code}&username={username}'
     response = requests.get(api_url)
     data = response.json()
     return data['geonames']
+
+
+
+def get_country_population(country):
+    username = open('.Geonames_Username').read()
+    api_url = f'http://api.geonames.org/searchJSON?q={country}&username={username}&type=json&featureCode=PCLI'
+    response = requests.get(api_url)
+    data = response.json()
+    if 'geonames' in data and data['geonames']:
+        for entry in data['geonames']:
+            if entry['name'].lower() == country.lower():
+                country_population = entry['population']
+                return country_population
+        
 
 
 

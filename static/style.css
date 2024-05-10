@@ -7,13 +7,61 @@
 body {
   height: 100vh;
   /* background-color: #b6b8b2; */
-  background-color: #ffffff;
+  background-color: #e5ecf6;
 }
 
 .navbar-brand {
-  color: rgb(255, 255, 255);
+  color: #0d6efd;
 }
 
 .navbar-brand:hover {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link {
+  color: rgb(255, 255, 255);
+}
+
+.nav-link:hover {
   color: #0d6efd;
 }
+
+/* form {
+  background-color: bisque;
+} */
+
+.all-index-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: rgba(88, 90, 163, 0.311);
+  padding: 30px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+.index_btn {
+  padding-top: 10px;
+}
+
+/* .graph-search {
+  height: 80px;
+} */
+
+.form-graph {
+  background-color: rgba(88, 90, 163, 0.311);
+  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 1px;
+  margin: 10px;
+  border-radius: 25px;
+  border: 1px solid black;
+  width: 700px;
+  justify-content: center;
+}
+
+/* .btn-graph {
+  margin-left: 50px;
+} */
